@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    min-height: 20em;
+    background-color: hsl(0, 0%, 95%);
+    box-sizing: border-box;
+    border-radius: .25em;
+    box-shadow: .01em .01em hsl(0, 0%, 0%);
+}
+
+.stepper-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: .8em;
+    gap: 12em;
+}
+
+.stepper-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: .8em;
+    width: 5em;
+}
+
+.stepper-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3em;
+    min-height: 3em;
+    background-color: hsl(240, 100%, 40%);
+    border-radius: 50%;
+    color: #ffff;
+}
+
+.stepper-text {
+    font-size: 1em;
+}
+
+.stepper-connector
+{
+    min-height: .08em;
+    background-color: hsl(240, 100%, 50%);
+    position: absolute;
+    z-index: 100;
+    top: calc(1.5em);
+    right: calc(100% + 1em);
+    left: calc(-100% - 8em);
+    width: 14em;
+}
+
+.stepper-header-active {
+    background-color: hsl(240, 80%, 60%);
+}
+
+.stepper-connector-active {
+    background-color: hsl(240, 100%, 70%);
+}

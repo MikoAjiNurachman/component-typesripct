@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.draggable-container {
+    min-width: 22em;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.draggable-item {
+    width: 20em;
+    height: 1em;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: move;
+}
+
+.dragging {
+    opacity: .5;
+}
