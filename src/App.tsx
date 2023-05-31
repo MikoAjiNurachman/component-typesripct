@@ -5,8 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 // import { FormStepper } from "./component/form-stepper/FormStepper"
 import { } from "react-router-dom"
 // import DraggableContent from "./component/draggable-content/DraggableContent"
-import style from "./App.module.css"
-import Input from "./component/input/Input"
+// import style from "./App.module.css"
+// import Input from "./component/input/Input"
 
 // const options = [
 //   {
@@ -64,11 +64,11 @@ function App() {
       
       {/* <DraggableContent items={items}/> */}
 
-      <div className={style.container}>
+      {/* <div className={style.container}>
         <Input type="number" placeHolder="Sample Number"/>
         <Input type="text" placeHolder="Sample Text"/>
         <Input type="password" placeHolder="Sample Password"/>
-      </div>
+      </div> */}
     </>
   )
 }
