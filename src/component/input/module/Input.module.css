@@ -1,0 +1,36 @@
+:root {
+    --primary: hsl(215, 100%, 54%);
+    --default: hsl(0, 0%, 20%)
+}
+
+.container {
+    position: relative;
+}
+
+.label {
+    position: absolute;
+    pointer-events: none;
+    font-size: .8em;
+    top: 20%;
+    left: 0;
+    color: var(--default);
+}
+
+.input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--default);
+    padding: .6em;
+    font-size: .8em;
+}
+
+.input:focus {
+    border-bottom: 1px solid var(--primary);
+}
+
+.input:focus ~ .label {
+    color: var(--primary);
+    transition: .3s;
+    font-size: .6rem;
+    translate: 0 -1rem;
+}

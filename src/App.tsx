@@ -4,7 +4,9 @@ import "@total-typescript/ts-reset"
 import "bootstrap/dist/css/bootstrap.min.css"
 // import { FormStepper } from "./component/form-stepper/FormStepper"
 import { } from "react-router-dom"
-import DraggableContent from "./component/draggable-content/DraggableContent"
+// import DraggableContent from "./component/draggable-content/DraggableContent"
+import style from "./App.module.css"
+import Input from "./component/input/Input"
 
 // const options = [
 //   {
@@ -39,14 +41,14 @@ import DraggableContent from "./component/draggable-content/DraggableContent"
 //   }
 // ]
 
-const items = [
-  'Todo 1',
-  'Todo 2',
-  'Todo 3',
-  'Todo 4',
-  'Todo 5',
-  'Todo 6',
-]
+// const items = [
+//   'Todo 1',
+//   'Todo 2',
+//   'Todo 3',
+//   'Todo 4',
+//   'Todo 5',
+//   'Todo 6',
+// ]
 
 function App() {
   // const [value, setValue] = useState<SelectOptions | undefined>(options[0])
@@ -60,7 +62,13 @@ function App() {
 
       {/* <FormStepper stepperList={stepperList}/> */}
       
-      <DraggableContent items={items}/>
+      {/* <DraggableContent items={items}/> */}
+
+      <div className={style.container}>
+        <Input type="number" placeHolder="Sample Number"/>
+        <Input type="text" placeHolder="Sample Text"/>
+        <Input type="password" placeHolder="Sample Password"/>
+      </div>
     </>
   )
 }
